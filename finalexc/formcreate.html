@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Form Create Account</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div class="container" id="acc">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h2>Form Create Account</h2>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<!-- <form action="" id="form-gender" method="POST"> -->
+				<div class="form-group">
+					<label for="nama">Nama</label>
+					<input type="text" id="nama" name="nama" class="form-control" placeholder="masukkan nama">
+				</div>
+				<label for="gender">Gender</label>
+				<select class="form-control" name="gender" id="gender">
+					<option>-- Pilih Gender --</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+				<div class="form-group">
+					<label for="telp">No.Telephone</label>
+					<input type="tel" id="telp" name="telp" class="form-control" placeholder="masukkan No telp">
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" class="form-control" placeholder="masukkan email">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" class="form-control" placeholder="masukkan password">
+				</div>
+				<button type="submit" class="btn btn-primary" id="created">Create</button><br>
+			</div>
+		</div>      
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<br>
+			<button type="submit" class="btn btn-success" id="back" style="display:none;"><i class="
+				glyphicon glyphicon-arrow-right"></i>Back To Menu Login</button>
+				<br>
+				<br>
+
+				<div id="panel" class="panel panel-default" style="display:none;">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Account Telah Dibuat</h3>
+					</div>
+					<div class="panel-body">
+						<label for="">Nama:</label>
+						<label for="" id="hasilnama"></label>
+						<br><hr>
+						<label for="">Gender:</label>
+						<label for="" id="hasilgender"></label>
+						<br><hr>
+						<label for="">Email:</label>
+						<label for="" id="hasilemail"></label>
+						<label for="" id="hasiltelp" style="display:none;"></label>
+						<label for="" id="hasilpassword" style="display:none;"></label>
+						<h3 class="text-center">SILAHKAN MASUK KE MENU CAREER DAN LOGIN!!</h3>
+					</div>
+				</div> 
+			</div>       
+		</div>
+		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+	</html>
