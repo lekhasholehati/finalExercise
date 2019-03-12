@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My Account</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Panel -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-info">
+					<div class="panel-heading" style="background-color: #7FFFD4;">
+						<h2 class="text-center">My Account</h2>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-1">
+								<div id="picture" class="panel-body text-center"><!-- <i id="pict" class="glyphicon glyphicon-picture"></i> -->
+									<img src="img/my.jpg" alt="my" id="my" class="img-circle">
+								</div><br>
+								<table class="table table-noborder">
+									<thead>
+										<tr>
+											<th>Nama</th>
+											<th>:Lekha Sholehati</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>Email</th>
+											<th>:user@gmail.com</th>
+										</tr>
+										<tr>
+											<th>Status</th>
+											<th style="color:green;">Active</th>
+										</tr>
+									</tbody>
+								</table>
+								<button id="registrasi" type="submit" class="btn btn-success">Registrasi Calon Karyawan</button>
+								<button id="kembali" type="submit" class="btn btn-danger">Sign Out</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>	
+	</div>
+	<!-- form -->
+	<div class="container" id="forms" style="display: none;">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h2>Form Data Pribadi</h2>
+				<hr>
+			</div>
+		</div>
+		<!-- form data pribadi -->
+		<div class="row">
+			<div class="form-row">
+				<div class="form-group col-md-6" >
+					<label for="nama">Nama Lengkap</label>
+					<input type="text" id="nama" name="nama" class="form-control" placeholder="nama lengkap">
+				</div>
+				<div class="form-group col-md-6" >
+					<label for="name">Nama Panggilan</label>
+					<input type="text" id="name" name="name" class="form-control" placeholder="nama panggilan">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="ktp">No KTP</label>
+					<input type="text" id="ktp" name="ktp" class="form-control" placeholder="no ktp">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="kk">No Kartu Keluarga</label>
+					<input type="text" id="kk" name="kk" class="form-control" placeholder="kartu keluarga">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="tempat">Tempat Lahir</label>
+					<input type="text" id="tempat" name="tempat" class="form-control" placeholder="tempat lahir">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="ttl">Tanggal Lahir</label>
+					<input type="date" name="bday" class="form-control" id="ttl">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="gender">Gender</label>
+					<select class="form-control" name="gender" id="gender">
+						<option>-- Pilih Gender --</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+				</div>
+				<div class="form-group col-md-4">
+					<label for="agama">Agama</label>
+					<select class="form-control" name="agama" id="agama">
+						<option>-- Pilih Agama --</option>
+						<option value="islam">Islam</option>
+						<option value="kristen">Kristen</option>
+						<option value="hindu">Hindu</option>
+						<option value="buddha">Buddha</option>
+						<option value="konghucu">Konghucu</option>
+						<option value="lainnya">Lainnya</option>
+					</select>
+				</div>
+				<div class="form-group col-md-4">
+					<label for="wn">Warga Negara</label>
+					<input type="text" name="wn" class="form-control" id="wn" placeholder="warga negara">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="telp">No.Telephone</label>
+					<input type="tel" id="telp" name="telp" class="form-control" placeholder="masukkan No telp">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" class="form-control" placeholder="masukkan email">
+				</div>
+				<div class="form-group col-md-12">
+					<label for="alamat">Alamat</label>
+					<textarea class="form-control" name="alamat" id="alamat"></textarea>
+				</div>
+				<!-- form data pendidikan -->
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2>Form Data Pendidikan</h2>
+						<hr>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="pend">Pendidikan Terakhir</label>
+							<select class="form-control" name="pend" id="pend">
+								<option>-- Pilih Pendidikan --</option>
+								<option value="sd">SD</option>
+								<option value="smp">SMP</option>
+								<option value="slta">SLTA</option>
+								<option value="d3">D3</option>
+								<option value="s1">S1</option>
+								<option value="s2">S2</option>
+								<option value="s3">S3</option>
+								<option value="lainnya">Lainnya</option>
+							</select>	
+						</div>
+						<div class="form-group col-md-6">
+							<label for="lulus">Tanggal Lulus</label>
+							<input type="date" name="bday" class="form-control" id="lulus">
+						</div>
+						<!-- <div class="form-group col-md-3"> -->
+						<table id="riwayatpend" class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Tingkat</th>
+									<th scope="col">Nama Sekolah/Perguruan tinggi</th>
+									<th scope="col">Jurusan/Fakultas</th>
+									<th scope="col">Tempat</th>
+									<th scope="col">Tahun Lulus</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">SD</th>
+									<td><input type="text" name="sd" id="sd" class="form-control"></td>
+									<td><input type="text" name="jsd" id="jsd" class="form-control" style="display: none;"></td>
+									<td><input type="text" name="tsd" id="tsd" class="form-control"></td>
+									<td><input type="text" name="tlsd" id="tlsd" class="form-control"></td>
+								</tr>
+								<tr>
+									<th scope="row">SMP</th>
+									<td><input type="text" name="smp" id="smp" class="form-control"></td>
+									<td><input type="text" name="jsmp" id="jsmp" class="form-control" style="display: none;"></td>
+									<td><input type="text" name="tsmp" id="tsmp" class="form-control"></td>
+									<td><input type="text" name="tlsmp" id="tlsmp" class="form-control"></td>
+								</tr>
+								<tr>
+									<th scope="row">SMA/SMK</th>
+									<td><input type="text" name="slta" id="slta" class="form-control"></td>
+									<td><input type="text" name="jslta" id="jslta" class="form-control"></td>
+									<td><input type="text" name="tslta" id="tslta" class="form-control"></td>
+									<td><input type="text" name="tlslta" id="tlsd" class="form-control"></td>
+								</tr>
+								<tr>
+									<th scope="row">D3</th>
+									<td><input type="text" name="d3" id="d3" class="form-control"></td>
+									<td><input type="text" name="jd3" id="jd3" class="form-control"></td>
+									<td><input type="text" name="td3" id="td3" class="form-control"></td>
+									<td><input type="text" name="tld3" id="tld3" class="form-control"></td>
+								</tr>
+								<tr>
+									<th scope="row">S1</th>
+									<td><input type="text" name="s1" id="s1" class="form-control"></td>
+									<td><input type="text" name="js1" id="js1" class="form-control"></td>
+									<td><input type="text" name="ts1" id="ts1" class="form-control"></td>
+									<td><input type="text" name="tls1" id="tls1" class="form-control"></td>
+								</tr>
+								<tr>
+									<th scope="row">S2</th>
+									<td><input type="text" name="s2" id="s2" class="form-control"></td>
+									<td><input type="text" name="js2" id="js2" class="form-control"></td>
+									<td><input type="text" name="ts2" id="ts2" class="form-control"></td>
+									<td><input type="text" name="tls2" id="tls2" class="form-control"></td>
+								</tr>
+								<tr>
+									<th scope="row">S3</th>
+									<td><input type="text" name="s3" id="s3" class="form-control"></td>
+									<td><input type="text" name="js3" id="js3" class="form-control"></td>
+									<td><input type="text" name="ts3" id="ts3" class="form-control"></td>
+									<td><input type="text" name="tls3" id="tls3" class="form-control"></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="form-group col-md-12">
+							<label for="karya">Karya Ilmiah</label>
+							<textarea id="karya" class="form-control" name="karya" placeholder="karya ilmiah yang pernah dibuat"></textarea>
+						</div>
+						<div class="form-group col-md-12">
+							<label for="prestasi">Prestasi</label>
+							<textarea id="prestasi" class="form-control" name="prestasi" placeholder="Prestasi yang pernah diraih"></textarea>
+						</div>
+					</div>						
+				</div>					
+			</div>
+		</div>
+		<!-- form Riwayat Pendidikan -->
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h2>Form Riwayat Pekerjaan</h2>
+				<hr>
+			</div>
+			<div class="form-row">
+				<table id="riwayatpek" class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th scope="col">Nama Perusahaan</th>
+							<th scope="col">..s/d..</th>
+							<th scope="col">Alasan Keluar</th>
+							<th scope="col">Alamat</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="text" name="np1" id="np1" class="form-control"></td>
+							<td><input type="text" name="lb1" id="lb1" class="form-control"></td>
+							<td><input type="text" name="ak1" id="ak1" class="form-control"></td>
+							<td><input type="text" name="alm1" id="alm2" class="form-control"></td>
+						</tr>
+						<tr>
+
+							<td><input type="text" name="np2" id="np2" class="form-control"></td>
+							<td><input type="text" name="lb2" id="lb2" class="form-control"></td>
+							<td><input type="text" name="ak2" id="ak2" class="form-control"></td>
+							<td><input type="text" name="alm2" id="alm2" class="form-control"></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="np3" id="np3" class="form-control"></td>
+							<td><input type="text" name="lb3" id="lb3" class="form-control"></td>
+							<td><input type="text" name="ak3" id="ak3" class="form-control"></td>
+							<td><input type="text" name="alm3" id="alm3" class="form-control"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- form Data keluarga -->
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2>Form Data Keluarga</h2>
+					<hr>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="status">Status Pernikahan</label>
+						<select class="form-control" name="status" id="status">
+							<option>-- Pilih status --</option>
+							<option value="belum menikah">Belum Menikah</option>
+							<option value="menikah">Menikah</option>
+							<option value="janda/duda">Janda/Duda</option>
+						</select>	
+					</div>
+					<div class="form-group col-md-12">
+						<label for="ayah">Nama Ayah</label>
+						<input type="text" name="ayah" id="ayah" class="form-control" placeholder="Nama Ayah">
+					</div>
+					<div class="form-group col-md-12">
+						<label for="ibu">Nama Ibu</label>
+						<input type="text" name="ibu" id="ibu" class="form-control" placeholder="Nama Ibu">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="saudara">Nama Saudara Kandung</label>
+						<input type="text" name="saudara" id="saudara" class="form-control" placeholder="Nama saudara kandung">
+					</div>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary" id="kirim">Kirim Data</button><br>			
+		</div>
+	</div>
+
+
+	<!-- </form> -->
+	<!-- Information -->
+	<div class="row" id="info" style="display: none;">
+		<div class="panel panel info">
+			<h1 class="text-center ">Terima Kasih Telah Registrasi</h1>
+			
+		</div>
+		
+	</div>
+	<!-- Table hasil input -->
+
+	<div class="col-md-6 col-md-offset-2">
+		<table class="table table-bordered" id="hasil" style="display: none;">
+			<tr>
+			<th><h2>Hasil Data Pribadi</h2></th>
+			<th></th>
+			</tr>
+			<tr>
+				<th>Nama</th>
+				<th id="hnama"></th>
+			</tr>
+
+			<tbody>
+				<tr>
+					<th>Nama Panggilan</th>
+					<th id="hpanggilan"></th>
+				</tr>
+				<tr>
+					<th>No KTP</th>
+					<th id="hktp"></th>  		
+					<tr>
+						<th>No Kartu Keluarga</th>
+						<th id="hkk"></th>
+					</tr>    		
+					<tr>
+						<th>Tempat Lahir</th>
+						<th id="htempat"></th>
+					</tr>    		
+					<tr>
+						<th>Tanggal Lahir</th>
+						<th id="httl"></th>
+					</tr>
+					<tr>
+						<th>Gender</th>
+						<th id="hgender"></th>
+					</tr>
+					<tr>
+						<th>Agama</th>
+						<th id="hagama"></th>
+					</tr>
+					<tr>
+						<th>Email</th>
+						<th id="hemail"></th>
+					</tr>
+					<tr>
+						<th>Alamat</th>
+						<th id="halamat"></th>
+					</tr>
+					<tr>
+						<th><h2>Hasil Data Pendidikan</h2></th>
+						<th></th>
+					</tr>
+					<tr>
+						<th>Pendidikan Terakhir</th>
+						<th id="hpend"></th>
+					</tr>
+					<tr>
+						<th>Tanggal Lulus</th>
+						<th id="hlulus"></th>
+					</tr>
+					<tr>
+						<th>SD</th>
+						<th id="hsd"></th>
+					</tr>
+					<tr>
+						<th>SMP</th>
+						<th id="hsmp"></th>
+					</tr>
+					<tr>
+						<th>SMA/SMK</th>
+						<th id="hslta"></th>
+					</tr>
+					<tr>
+						<th>D3</th>
+						<th id="hd3"></th>
+					</tr>
+					<tr>
+						<th>S1</th>
+						<th id="hs1"></th>
+					</tr>
+					<tr>
+						<th>S2</th>
+						<th id="hs2"></th>
+					</tr>
+					<tr>
+						<th>S3</th>
+						<th id="hs3"></th>
+					</tr>
+					<tr>
+						<th>Karya Ilmiah</th>
+						<th id="hkarya"></th>
+					</tr>
+					<tr>
+						<th>Prestasi</th>
+						<th id="hprestasi"></th>
+					</tr>
+					<tr>
+						<th><h2>Hasil Data Riwayat Pekerjaan</h2></th>
+						<th></th>
+					</tr>
+					<tr>
+						<th>Nama Perusahaan</th>
+						<th id="hnp"></th>
+					</tr>
+					<tr>
+						<th>Alasan Keluar</th>
+						<th id="hak"></th>
+					</tr>
+					<tr>
+						<th>Periode</th>
+						<th id="hlb"></th>
+					</tr>
+					<tr>
+						<th><h2>Hasil Data Keluarga</h2></th>
+						<th></th>
+					</tr>
+					<tr>
+						<th>Status Pernikahan</th>
+						<th id="hstatus"></th>
+					</tr>
+					<tr>
+						<th>Nama Ayah</th>
+						<th id="hayah"></th>
+					</tr>
+					<tr>
+						<th>Nama Ibu</th>
+						<th id="hibu"></th>
+					</tr>
+					<tr>
+						<th>Saudara Kandung</th>
+						<th id="hsaudara"></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+	</html>
